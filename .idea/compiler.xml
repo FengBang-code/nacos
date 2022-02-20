@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-nacos-consumer83" />
+        <module name="spring-nacos-config" />
         <module name="spring-nacos-provider9001" />
         <module name="spring-nacos-provider9002" />
-        <module name="spring-nacos-consumer83" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

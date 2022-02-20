@@ -13,6 +13,7 @@
         <module>spring-nacos-provider9001</module>
         <module>spring-nacos-provider9002</module>
         <module>spring-nacos-consumer83</module>
+        <module>spring-nacos-config</module>
     </modules>
 
     <properties>
@@ -34,10 +35,7 @@
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-config</artifactId>
                 <version>2.1.0.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
             </dependency>
-
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
