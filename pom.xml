@@ -14,6 +14,7 @@
         <module>spring-nacos-provider9002</module>
         <module>spring-nacos-consumer83</module>
         <module>spring-nacos-config</module>
+        <module>spring-gateway9527</module>
     </modules>
 
     <properties>
@@ -43,6 +44,15 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

@@ -1,0 +1,33 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启动态路由功能，->负载均衡+微服务名路由
+      routes:
+        - id: provider_9001
+#          uri: http://localhost:9001
+          uri: lb://nacos-provider
+          predicates:
+            - Path=/getIt/**
+
+        - id: provider_9002
+#          uri: http://localhost:9002
+          uri: lb://nacos-provider
+          predicates:
+            - Path=/getIt/**
+
+        - id: provider_9001
+#          uri: http://localhost:9001
+          uri: lb://nacos-provider
+          predicates:
+            - Path=/getName/**
+            - After=2022-02-21T12:30:34.485+08:00[Asia/Shanghai]
+

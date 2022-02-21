@@ -10,6 +10,7 @@
         <module name="spring-nacos-consumer83" />
         <module name="spring-nacos-config" />
         <module name="spring-nacos-provider9001" />
+        <module name="spring-gateway9527" />
         <module name="spring-nacos-provider9002" />
       </profile>
     </annotationProcessing>
